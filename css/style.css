@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color:rgb(59, 55, 55);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background-color:midnightblue;
+    padding: 2rem;
+    margin: 0;
+}
+
+.navbar img {
+    height: 5rem;
+
+}
