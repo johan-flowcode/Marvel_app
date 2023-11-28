@@ -20,7 +20,7 @@ fetch(url)
   //Funcion prindata
 const printData = (personajes) => {
 
-  let str = '<div class="row row-cols-1 row-cols-md-3 g-3">';
+  let str = '<div class="row row-cols-1 row-cols-md-2 g-2">';
   personajes.forEach(personaje => {
     const name = personaje.name || "No Name Available";
     const img = `${personaje.thumbnail.path}.${personaje.thumbnail.extension}`;

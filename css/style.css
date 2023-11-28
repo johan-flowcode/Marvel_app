@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     padding: 0;
-    background-color:rgb(59, 55, 55);
+    background-color: rgb(197, 14, 14);
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -10,12 +10,49 @@ body {
 
 .navbar {
     display: flex;
-    background-color:midnightblue;
-    padding: 2rem;
+    background-color: black;
+    padding: 1rem;
     margin: 0;
 }
 
 .navbar img {
     height: 5rem;
+
+}
+
+
+.btn {
+    background-color: transparent;
+    border: solid 1px rgb(197, 14, 14);
+    color: yellow;
+
+}
+
+.btn:hover {
+    background-color: rgb(197, 14, 14);
+    color: white;
+    border: solid 2px yellow;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*->Main-Cards<-*/
+
+.card {
+    border: 2px solid black;
+    box-shadow: 0 3px 6px rgb(49, 2, 2);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+
 
 }
