@@ -1,6 +1,8 @@
 # Marvel_app & Dragon ball
 
-![Imagen 1](img/marvel-logo.png)     ![Imagen 2](img/dragonimg/esferalogo.png)
+<img src="img/marvel-logo.png" width="200" alt="Imagen Marvel"/>  
+<img src="img/dragonimg/esferalogo.png" width="200" alt="Imagen Dragon Ball"/>
+
 
 
 
