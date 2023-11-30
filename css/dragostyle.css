@@ -9,16 +9,49 @@ body {
 }
 
 .navbar {
+    max-width: 1200px;
     display: flex;
     background-color: black;
     color: orange;
     padding: 1rem;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .navbar img {
     height: 3rem;
 }
+
+.btn {
+    background-color: transparent;
+    border: solid 1px orange;
+    color: orange;
+
+}
+
+.btn:hover {
+    background-color: orange;
+    color: black;
+    border: solid 2px red;
+
+}
+
+.dropdown {
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: none;
+}
+
+.dropdown-item {
+    color: yellow;
+}
+
+.dropdown-item:hover {
+    background-color: orange;
+}
+
 
 .container {
     display: flex;
@@ -38,7 +71,7 @@ body {
     margin: 10px;
     text-align: start;
     z-index: 0;
-    
+
 
 }
 
@@ -50,25 +83,47 @@ body {
     min-height: 400px;
     max-height: 400px;
     margin: 0px;
-    object-position:center center;
+    object-position: center center;
     object-fit: contain;
     cursor: pointer;
     z-index: 0;
     transition: transform 0.1s ease-in-out;
     transform: scale(0.9);
-    
+
 
 }
 
-.card-img:hover{
+.card-img:hover {
     transform: scale(1.0);
 }
 
-.card h5, h6{
-    color:rgb(255, 168, 7);
+.card h5,
+h6 {
+    color: rgb(255, 168, 7);
 }
 
 .card p {
-    color:white
+    color: white
 }
 
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-img {
+        position: relative;
+        top: 0;
+        min-height: 500px;
+        max-height: 500px;
+    }
+
+}
