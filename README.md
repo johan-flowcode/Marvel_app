@@ -34,6 +34,9 @@ Aquí está el arsenal tecnológico que hice posible este choque de titanes:
 
 ¡Espero que disfrutes explorando este proyecto tanto como yo disfruté creándolo!
 
+
+Link de la app : https://johan-flowcode.github.io/Marvel_app/
+
 ---
 
 Creado con 🧡 y un poco de magia por [johan-flowcode](https://github.com/johan-flowcode/Marvel_app/tree/dev)  
