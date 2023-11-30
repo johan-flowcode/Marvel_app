@@ -40,5 +40,5 @@ Creado con 🧡 y un poco de magia por [johan-flowcode](https://github.com/johan
 
 
 
-url: https://johan-flowcode.github.io/Marvel_app/ ![qrapppng](https://github.com/johan-flowcode/Marvel_app/assets/147258432/14011531-f39a-49d9-a320-4ea48049b99d)
+![qrapppng](https://github.com/johan-flowcode/Marvel_app/assets/147258432/14011531-f39a-49d9-a320-4ea48049b99d)
 
