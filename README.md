@@ -36,4 +36,10 @@ Aquí está el arsenal tecnológico que hice posible este choque de titanes:
 
 ---
 
-Creado con 🧡 y un poco de magia por [johan-flowcode](https://github.com/johan-flowcode/Marvel_app/tree/dev)
+Creado con 🧡 y un poco de magia por [johan-flowcode](https://github.com/johan-flowcode/Marvel_app/tree/dev)  
+
+
+
+
+[![qrapppng](https://github.com/johan-flowcode/Marvel_app/assets/147258432/14011531-f39a-49d9-a320-4ea48049b99d)](https://johan-flowcode.github.io/Marvel_app/)
+
