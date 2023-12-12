@@ -1,14 +1,45 @@
 //Dragon-Ball app
-const url = 'https://dragonball-api.com/api/characters';
+const urlBase = 'https://dragonball-api.com/api/characters';
+let currentPage = 1;
+const limit = 5;
+let totalPages = 0;
 const main = document.getElementById("main");
 
 // Hacer la solicitud a la API
-fetch(url)
-  .then(response => response.json())
-  .then(response => printData(response.items))
-  .catch(error => {
-    console.log('Error al hacer la solicitud:', error);
-  });
+const fetchCharacters = (page) => {
+  const url = `${urlBase}?page=${page}&limit=${limit}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(response => {
+      printData(response.items);
+      updatePagination(response.meta.totalPages, page);
+    })
+    .catch(error => {
+      console.log('Error al hacer la solicitud:', error);
+    });
+};
+
+fetchCharacters(currentPage);
+const updatePagination = (totalPagesFromAPI, currentPage) => {
+  totalPages = totalPagesFromAPI;
+  document.getElementById('previousPage').parentElement.classList[currentPage === 1 ? 'add' : 'remove']('disabled');
+  document.getElementById('nextPage').parentElement.classList[currentPage === totalPages ? 'add' : 'remove']('disabled');
+};
+document.getElementById('previousPage').addEventListener('click', function (event) {
+  event.preventDefault();
+  if (currentPage > 1) {
+    currentPage--;
+    fetchCharacters(currentPage);
+  }
+});
+
+document.getElementById('nextPage').addEventListener('click', function (event) {
+  event.preventDefault();
+  if (currentPage < totalPages) {
+    currentPage++;
+    fetchCharacters(currentPage);
+  }
+});
 
 //Funcion prindata
 const printData = (characters) => {
@@ -80,3 +111,7 @@ const printData = (characters) => {
 
 
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchCharacters(currentPage);
+});

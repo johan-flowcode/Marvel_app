@@ -36,14 +36,8 @@ body {
 
 }
 
-.nav-link-home {
-    color: yellow;
-    margin-right: 15px;
-    text-decoration: none;
-}
-
-.nav-link-home:hover {
-    color: white;
+#searchInput {
+    border: solid 2px black;
 }
 
 /* Estilo para el menú desplegable */

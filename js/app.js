@@ -17,7 +17,7 @@ fetch(url)
     console.log('Error al hacer la solicitud:', error);
   });
 
-  //Funcion prindata
+//Funcion prindata
 const printData = (personajes) => {
 
   let str = '<div class="row row-cols-1 row-cols-md-2 g-2">';
@@ -26,7 +26,7 @@ const printData = (personajes) => {
     const img = `${personaje.thumbnail.path}.${personaje.thumbnail.extension}`;
     const bio = personaje.description || "No Description Available";
     const comicLinkUrl = personaje.urls.find(url => url.type === 'comiclink')?.url || '#';
-    
+
     str +=
       `<div class="col"> 
         <div class="card">

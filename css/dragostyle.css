@@ -21,14 +21,14 @@ body {
     height: 3rem;
 }
 
-.btn {
+#dropdownMenuButton {
     background-color: transparent;
     border: solid 1px orange;
     color: orange;
 
 }
 
-.btn:hover {
+#dropdownMenuButton:hover {
     background-color: orange;
     color: black;
     border: solid 2px red;
@@ -105,6 +105,45 @@ h6 {
 .card p {
     color: white
 }
+
+.Page-nav {
+    padding: 5px 0;
+}
+
+.pagination {
+    justify-content: center;
+    max-width: 1200px;
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#nextPage {
+    background-color: transparent;
+    border: solid 1px orange;
+    color: orange;
+}
+
+#nextPage:hover {
+    background-color: orange;
+    color: black;
+    border: solid 2px red;
+}
+
+#previousPage:hover {
+    background-color: orange;
+    color: black;
+    border: solid 2px red;
+
+}
+
+#previousPage {
+    background-color: transparent;
+    color: orange;
+    border: solid 1px orange;
+}
+
 
 
 @media (max-width: 768px) {
