@@ -106,9 +106,11 @@ h6 {
     color: white
 }
 
+/*Paginación*/
 .Page-nav {
     padding: 5px 0;
 }
+
 
 .pagination {
     justify-content: center;
@@ -142,6 +144,51 @@ h6 {
     background-color: transparent;
     color: orange;
     border: solid 1px orange;
+}
+
+/*Modal*/
+.modal-content {
+    display: flex;
+    background-color: rgb(138, 138, 138);
+    border: 2px solid black;
+    box-shadow: 0 3px 6px black;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    z-index: 0;
+
+}
+
+.modal-header {
+    background-color: black;
+    border-color: rgb(138, 138, 138);
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+
+.close {
+    background-color: transparent;
+    border: solid 2px orange;
+    color: orange;
+    border-radius: 5px;
+}
+
+.close:hover {
+    color: white;
+}
+
+h5 {
+    color: orange;
+}
+
+.modal-body p {
+    color: black;
+
+}
+
+strong {
+    color: orange;
 }
 
 

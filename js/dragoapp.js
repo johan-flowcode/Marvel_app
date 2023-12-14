@@ -89,7 +89,7 @@ const printData = (characters) => {
 
     str = str += `<div class="col">
         <div class="card">
-            <img src="${image[i]}" class="card-img" alt="imagen">
+        <img src="${image[i]}" class="card-img modal-trigger" alt="Imagen de ${name[i]}" data-id="${characters[i].id}">
             <div class="card-body">
                 <h5 class="card-title">${name[i]}</h5>
                 <p class="card-text">${race[i]}</p>
@@ -109,8 +109,37 @@ const printData = (characters) => {
   str = str + `</div>`
   main.innerHTML = str;
 
+  document.querySelectorAll('.modal-trigger').forEach(img => {
+    img.addEventListener('click', function () {
+      const characterId = this.getAttribute('data-id');
+      loadData(characterId);
+    });
+  });
 
 };
+
+function loadData(characterId) {
+  fetch(`${urlBase}/${characterId}`)
+    .then(response => response.json())
+    .then(character => printModal(character));
+}
+
+function printModal(character) {
+  let myModal = new bootstrap.Modal(document.getElementById('infoModal'));
+  myModal.show();
+  let modalTitleElement = document.querySelector('#infoModal .modal-title');
+  let modalBodyElement = document.querySelector('#infoModal .modal-body');
+
+  modalTitleElement.innerHTML = character.name;
+  modalBodyElement.innerHTML = `
+    <div>
+      <img src="${character.image}" class="card-img-top">
+      <p>${character.description}</p>
+      <p><strong>Planeta de Origen:</strong> ${character.originPlanet.name}</p>
+      <p><strong>Transformaciones:</strong> ${character.transformations.map(t => t.name).join(', ')}</p>
+    </div>`;
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchCharacters(currentPage);
